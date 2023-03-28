@@ -59,7 +59,7 @@ const toast = useToast();
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "/api/message",
+          "https://ctapp.onrender.com/api/message",
           {
             content: newMessage,
             chatId: selectedChat,
@@ -94,7 +94,7 @@ const toast = useToast();
       setLoading(true);
 
       const { data } = await axios.get(
-        `/api/message/${selectedChat._id}`,
+        `https://ctapp.onrender.com/api/message/${selectedChat._id}`,
         config
       );
       setMessages(data);
