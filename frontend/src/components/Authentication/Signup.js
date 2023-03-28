@@ -51,7 +51,7 @@ const [picLoading, setPicLoading] = useState(false);
           "Content-type": "application/json",
         },
       };
-      const { data } =await  axios.post("/api/user",
+      const { data } =await  axios.post("https://ctapp.onrender.com/api/user",
         {
           name,
           email,
